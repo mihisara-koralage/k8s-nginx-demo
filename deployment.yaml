@@ -17,3 +17,15 @@ spec:
         image: mihisara2004/nginx-demo:v1
         ports:
         - containerPort: 80
+        env:
+        - name: APP_COLOR
+          valueFrom:
+            configMapKeyRef:
+              name: nginx-config
+              key: APP_COLOR
+        - name: APP_MODE
+          valueFrom:
+            configMapKeyRef:
+              name: nginx-config
+              key: APP_MODE
+    
