@@ -28,4 +28,9 @@ spec:
             configMapKeyRef:
               name: nginx-config
               key: APP_MODE
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: nginx-secret
+              key: DB_PASSWORD
     
