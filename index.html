@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux, Docker & Kubernetes - DevOps Fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">DevOps Essentials</h1>
+                <ul class="nav-links">
+                    <li><a href="#linux">Linux</a></li>
+                    <li><a href="#docker">Docker</a></li>
+                    <li><a href="#kubernetes">Kubernetes</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Master the DevOps Trinity</h1>
+            <p class="hero-subtitle">Linux, Docker, and Kubernetes - The Foundation of Modern Infrastructure</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Linux Section -->
+        <section id="linux" class="content-section">
+            <div class="section-header">
+                <div class="icon-circle linux-icon">🐧</div>
+                <h2>Linux</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>What is Linux?</h3>
+                    <p>Linux is an open-source operating system kernel that powers millions of servers, containers, and embedded systems worldwide. It provides the foundation for modern DevOps infrastructure.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Multi-user and multi-tasking capabilities</li>
+                        <li>Powerful command-line interface (CLI)</li>
+                        <li>Robust security and permissions system</li>
+                        <li>Extensive package management</li>
+                        <li>High stability and performance</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Essential Commands</h3>
+                    <div class="code-block">
+                        <code>ls -la          # List files with details</code>
+                        <code>cd /path/dir    # Change directory</code>
+                        <code>mkdir newdir    # Create directory</code>
+                        <code>chmod 755 file  # Change permissions</code>
+                        <code>ps aux          # View processes</code>
+                        <code>sudo apt update # Update packages</code>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3>Why Learn Linux?</h3>
+                    <p>Linux is the backbone of cloud computing, containerization, and DevOps. Understanding Linux is crucial for managing servers, automating tasks, and working with modern deployment technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Docker Section -->
+        <section id="docker" class="content-section">
+            <div class="section-header">
+                <div class="icon-circle docker-icon">🐳</div>
+                <h2>Docker</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>What is Docker?</h3>
+                    <p>Docker is a containerization platform that packages applications and their dependencies into isolated containers. It ensures consistency across different environments and simplifies deployment.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Core Concepts</h3>
+                    <ul>
+                        <li><strong>Images:</strong> Read-only templates for containers</li>
+                        <li><strong>Containers:</strong> Running instances of images</li>
+                        <li><strong>Dockerfile:</strong> Script to build images</li>
+                        <li><strong>Docker Hub:</strong> Registry for sharing images</li>
+                        <li><strong>Volumes:</strong> Persistent data storage</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Common Commands</h3>
+                    <div class="code-block">
+                        <code>docker build -t myapp .    # Build image</code>
+                        <code>docker run -d myapp        # Run container</code>
+                        <code>docker ps                  # List containers</code>
+                        <code>docker images              # List images</code>
+                        <code>docker stop container_id   # Stop container</code>
+                        <code>docker-compose up          # Start services</code>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3>Benefits</h3>
+                    <p>Docker provides portability, consistency, efficiency, and scalability. It eliminates "works on my machine" problems and enables microservices architecture with isolated, lightweight containers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kubernetes Section -->
+        <section id="kubernetes" class="content-section">
+            <div class="section-header">
+                <div class="icon-circle k8s-icon">⎈</div>
+                <h2>Kubernetes</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>What is Kubernetes?</h3>
+                    <p>Kubernetes (K8s) is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications across clusters of machines.</p>
+                </div>
+                <div class="content-box">
+                    <h3>Architecture Components</h3>
+                    <ul>
+                        <li><strong>Pods:</strong> Smallest deployable units</li>
+                        <li><strong>Nodes:</strong> Worker machines in cluster</li>
+                        <li><strong>Services:</strong> Network abstraction layer</li>
+                        <li><strong>Deployments:</strong> Declarative updates</li>
+                        <li><strong>ConfigMaps/Secrets:</strong> Configuration management</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>kubectl Commands</h3>
+                    <div class="code-block">
+                        <code>kubectl get pods            # List pods</code>
+                        <code>kubectl apply -f app.yaml  # Deploy app</code>
+                        <code>kubectl scale --replicas=3 # Scale pods</code>
+                        <code>kubectl logs pod-name      # View logs</code>
+                        <code>kubectl delete pod name    # Delete pod</code>
+                        <code>kubectl describe node      # Node details</code>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <h3>Key Advantages</h3>
+                    <p>Kubernetes provides automated rollouts/rollbacks, self-healing, horizontal scaling, load balancing, and declarative configuration. It's the industry standard for container orchestration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section id="workflow" class="content-section">
+            <div class="section-header">
+                <div class="icon-circle workflow-icon">🔄</div>
+                <h2>Complete DevOps Workflow</h2>
+            </div>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <h3>Develop on Linux</h3>
+                    <p>Write code and test on a Linux environment with familiar tools and commands</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <h3>Containerize with Docker</h3>
+                    <p>Package application and dependencies into Docker containers for consistency</p>
+                </div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <h3>Orchestrate with Kubernetes</h3>
+                    <p>Deploy and manage containers at scale with automated orchestration</p>
+                </div>
+            </div>
+            
+            <div class="integration-box">
+                <h3>How They Work Together</h3>
+                <p>Linux provides the operating system foundation, Docker creates portable containers that run on Linux, and Kubernetes orchestrates these Docker containers across multiple Linux servers. This trinity forms the backbone of modern cloud-native applications and microservices architecture.</p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources-section">
+            <h2>Learning Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>📚 Documentation</h3>
+                    <ul>
+                        <li>Linux: kernel.org</li>
+                        <li>Docker: docs.docker.com</li>
+                        <li>Kubernetes: kubernetes.io</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>💻 Practice</h3>
+                    <ul>
+                        <li>Play with Docker</li>
+                        <li>Katacoda Interactive Labs</li>
+                        <li>Minikube for local K8s</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>🎓 Certification</h3>
+                    <ul>
+                        <li>Linux: LPIC, RHCSA</li>
+                        <li>Docker: DCA</li>
+                        <li>Kubernetes: CKA, CKAD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DevOps Essentials. Built for learning Linux, Docker & Kubernetes.</p>
+        </div>
+    </footer>
+</body>
+</html>
