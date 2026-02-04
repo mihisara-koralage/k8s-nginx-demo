@@ -17,9 +17,6 @@ spec:
         image: mihisara2004/nginx-demo:v1
         ports:
         - containerPort: 80
-        volumeMounts:
-        - mountPath: "/usr/share/nginx/html"
-          name: nginx-storage
         env:
         - name: APP_COLOR
           valueFrom:
@@ -36,8 +33,4 @@ spec:
             secretKeyRef:
               name: nginx-secret
               key: DB_PASSWORD
-      volumes:
-      - name: nginx-storage
-        persistentVolumeClaim:
-          claimName: nginx-pvc
 
